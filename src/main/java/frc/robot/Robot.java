@@ -3,6 +3,7 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot;
+import edu.wpi.first.wpilibj.TimedRobot;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -14,22 +15,34 @@ public class Robot extends TimedRobot {
 
 
   @Override
-  public void robotInit() {}
+  public void robotInit() {
+    System.out.println("Robot Init");
+  }
 
   @Override
-  public void robotPeriodic() {}
+  public void robotPeriodic() {
+    System.out.println("Robot Periodic");
+  }
 
   @Override
-  public void autonomousInit() {}
+  public void autonomousInit() {
+    System.out.println("Auto Init");
+  }
 
   @Override
-  public void autonomousPeriodic() {}
+  public void autonomousPeriodic() {
+    System.out.println("Auto Periodic");
+  }
 
   @Override
-  public void teleopInit() {}
+  public void teleopInit() {
+    System.out.println("Teleop Init");
+  }
 
   @Override
-  public void teleopPeriodic() {}
+  public void teleopPeriodic() {
+    System.out.println("Teleop Periodic");
+  }
 
   /** This function is called once when the robot is disabled. */
   @Override
